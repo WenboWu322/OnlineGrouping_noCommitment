@@ -1,0 +1,12 @@
+decision_day,task_id,asset,cycle,execution_day,nominal_day,status,ready_day,replanned_today,reference_day,target_day,shift_days,movement,group_size
+20,PMEC_001:cycle0,PMEC_001,0,38,37,PROPOSED,5,False,37,38,1,delayed,4
+20,PMEC_002:cycle0,PMEC_002,0,22,25,PROPOSED,2,False,25,22,-3,advanced,4
+20,PMEC_003:cycle0,PMEC_003,0,43,43,PROPOSED,8,False,43,43,0,unchanged,3
+20,PMEC_004:cycle0,PMEC_004,0,43,44,PROPOSED,16,False,44,43,-1,advanced,3
+20,PMEC_005:cycle0,PMEC_005,0,22,21,PROPOSED,2,False,21,22,1,delayed,4
+20,PMEC_007:cycle0,PMEC_007,0,38,32,PROPOSED,4,False,32,38,6,delayed,4
+20,PMEC_008:cycle0,PMEC_008,0,43,37,PROPOSED,6,False,37,43,6,delayed,3
+20,PMEC_009:cycle0,PMEC_009,0,22,20,PROPOSED,2,False,20,22,2,delayed,4
+20,PMEC_010:cycle0,PMEC_010,0,38,36,PROPOSED,2,False,36,38,2,delayed,4
+20,PMEC_011:cycle0,PMEC_011,0,22,21,PROPOSED,2,False,21,22,1,delayed,4
+20,PMEC_012:cycle0,PMEC_012,0,38,35,PROPOSED,5,False,35,38,3,delayed,4

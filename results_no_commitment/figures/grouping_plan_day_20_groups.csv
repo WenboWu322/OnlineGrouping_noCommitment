@@ -1,0 +1,4 @@
+target_day,task_count,pmec_count,assets,task_ids
+22,4,4,PMEC_002;PMEC_005;PMEC_009;PMEC_011,PMEC_002:cycle0;PMEC_005:cycle0;PMEC_009:cycle0;PMEC_011:cycle0
+38,4,4,PMEC_001;PMEC_007;PMEC_010;PMEC_012,PMEC_001:cycle0;PMEC_007:cycle0;PMEC_010:cycle0;PMEC_012:cycle0
+43,3,3,PMEC_003;PMEC_004;PMEC_008,PMEC_003:cycle0;PMEC_004:cycle0;PMEC_008:cycle0
