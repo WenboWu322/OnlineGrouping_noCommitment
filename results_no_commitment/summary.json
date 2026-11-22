@@ -16,7 +16,7 @@
   "actual_low_pressure_asset_days": 0,
   "actual_below_plan_asset_days": 0,
   "solver_calls": 48,
-  "total_solver_seconds": 0.6757383724907413,
+  "total_solver_seconds": 0.653946460224688,
   "days_without_solve": 71,
   "terminal_min_retained_plan_margin": 0.0996814247679545,
   "pressure_state_rmse": 0.004415492648718981,

@@ -435,7 +435,7 @@ def plot_trajectories(
                 [], [],
                 color='#8f96a3',
                 ls=':',
-                label='System-wide ILP solve day',
+                label='ILP solve day',
             )
         )
 
@@ -448,7 +448,6 @@ def plot_trajectories(
 
     fig.suptitle(
         'Pressure monitoring and actual GR execution'
-        ' — no commitment locking'
     )
 
     label = (
@@ -666,7 +665,7 @@ def plot_plan_margins(
             color='#218c55',
             marker='|',
             ls='None',
-            label='System-wide ILP solve day',
+            label='ILP solve day',
         ),
     ]
 

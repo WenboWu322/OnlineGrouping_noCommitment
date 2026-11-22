@@ -21,7 +21,7 @@ class Config:
     days: int = 120
     seed: int = 42
     horizon: int = 30
-    preparation_days: int = 2
+    preparation_days: int = 1
     max_advance_days: int = 5
     capacity: int = 4
     p_trigger: float = 3.2

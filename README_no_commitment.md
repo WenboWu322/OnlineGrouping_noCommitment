@@ -25,12 +25,21 @@ python maintenance_system_no_commitment.py --config example_config_no_commitment
 ```bash
 主程序运行：
 python maintenance_system_no_commitment.py --config example_config_no_commitment.json --out results_no_commitment
+
 绘制实际执行分组：
 python plot_grouping.py --results results_no_commitment --mode executed
+
 绘制第 20 天的计划快照：
 python plot_grouping.py --results results_no_commitment --mode planned --decision-day 20
+
 绘制单台设备压力及安全余量：
 python plot_trajectories.py --results results_no_commitment --assets PMEC_001 --show-replanning --diagnostics
+
+运行anamoly validation (默认 10 个种子、5 个异常强度、180 天):
+python anomaly_validation/anomaly_validation_experiment.py --out anomaly_validation/results_full
+
+仅仅运行小规模的anomaly validation (2 个种子、1 个异常强度、120 天):
+python anomaly_validation/anomaly_validation_experiment.py --quick --out anomaly_validation/results_quick
 ```
 
 Python >= 3.10，SciPy 需要提供 scipy.optimize.milp。
