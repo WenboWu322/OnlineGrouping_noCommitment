@@ -1,0 +1,41 @@
+\begin{table}[htbp]
+\centering
+\caption{Effect of the sensitivity axes on total cost and on alarm
+exposure, as the median difference to the corresponding entry of
+Table~\ref{tab:ch6-results} (20 seeds). S3 is the deterministic
+Chapter~\ref{chap:grouping} method operated online, S5 the proposed
+scheme. A positive entry means higher cost or higher exposure.}
+\label{tab:ch6-sensitivity}
+\setlength{\tabcolsep}{4pt}
+\footnotesize
+\begin{tabular}{@{}l l rr rr@{}}
+\toprule
+Axis & Variant & \multicolumn{2}{c}{$\Delta C^{\mathrm{tot}}$}
+     & \multicolumn{2}{c}{$\Delta A^{\mathrm{alarm}}$} \\
+\cmidrule(r){3-4}\cmidrule(r){5-6}
+& & S3 & S5 & S3 & S5 \\
+\midrule
+
+$\sigma_y=0.020$ ($3\times$ nominal) & A & +228 & +230 & +6.5 & +13.0 \\
+$\sigma_y=0.020$ ($3\times$ nominal) & C & +328 & +340 & +12.0 & +20.5 \\
+clean records & A & -255 & -185 & -3.5 & -3.5 \\
+$20\%$ records missing & A & +352 & +262 & -2.5 & -7.5 \\
+$\varepsilon=0.01$ & A & +0 & +0 & +0.0 & +0.0 \\
+$\varepsilon=0.10$ & A & +0 & +0 & +0.0 & +0.0 \\
+$\varepsilon=0.25$ & A & +0 & +0 & +0.0 & +0.0 \\
+sudden leaks ($5\times10^{-3}$ per day) & C & +470 & +415 & +14.5 & +18.5 \\
+sudden leaks ($5\times10^{-3}$ per day) & D & +585 & +585 & +16.5 & +30.0 \\
+$\Delta^{\mathrm{delay}}=3$ days & D & +65 & +180 & -12.5 & -12.0 \\
+$\Delta^{\mathrm{delay}}=10$ days & D & -55 & -5 & +4.0 & +8.5 \\
+$\Delta^{\mathrm{delay}}=20$ days & D & -55 & -25 & +4.0 & +8.5 \\
+$\Delta^{\mathrm{adv}}=6$ days & D & -230 & -200 & -1.5 & -10.5 \\
+$L^{\mathrm{win}}=20$ days & D & -132 & -25 & +5.0 & +1.5 \\
+$K^{\mathrm{clus}}=3$ tasks per visit & D & +1350 & +1340 & -17.0 & -22.5 \\
+$K^{\mathrm{clus}}=5$ tasks per visit & D & +385 & +430 & -6.0 & -12.0 \\
+cluster scatter, sd 8 d & D & +108 & +78 & +0.5 & +4.5 \\
+cluster scatter, sd 15 d & D & +38 & +125 & +0.5 & +1.5 \\
+$\eta^{+}=20$ per day of delay & D & +418 & +562 & -26.0 & -25.5 \\
+commitments removed ($L^{\mathrm{lock}}=0$, $\eta^{\mathrm{stab}}=0$) & D & +0 & +45 & +0.0 & +0.5 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+results_archive/
+results/suite*.log
+results/main.log
+results/trace_run/
+results/pilot/
+# per-seed rows of the sensitivity sweeps are regenerable by run_experiments.sh;
+# only their summaries are committed, together with the rows behind the main
+# comparison table of the thesis
+results/sweep_*/rows.csv
