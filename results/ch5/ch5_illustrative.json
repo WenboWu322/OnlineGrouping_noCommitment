@@ -1,0 +1,377 @@
+{
+  "instance": {
+    "T": 30,
+    "n_pmec": 10,
+    "p_nom": 3.5,
+    "p_ref": 3.2,
+    "p_min": 3.0,
+    "delta_adv": 3,
+    "delta_safe": 2,
+    "K_clus": 5,
+    "c_set": 10.0,
+    "eta_minus": 5.0,
+    "eta_plus": 10.0,
+    "rate_low": 0.012,
+    "rate_high": 0.03,
+    "p0_low": 3.21,
+    "p0_high": 3.5,
+    "seed": 4
+  },
+  "summary": {
+    "seed": 4,
+    "T": 30,
+    "n_pmec": 10,
+    "n_tasks": 21,
+    "n_dispatches": 6,
+    "max_cluster": 5,
+    "reduction_pct": 71.4,
+    "setup_before": 210.0,
+    "setup_after": 60.0,
+    "n_windows": 3,
+    "fallback_windows": 0,
+    "advanced": 9,
+    "unchanged": 2,
+    "delayed": 10,
+    "mean_abs_shift": 1.95,
+    "max_abs_shift": 6,
+    "dispatches": {
+      "4": [
+        "PMEC_004#0",
+        "PMEC_006#0",
+        "PMEC_008#0"
+      ],
+      "7": [
+        "PMEC_002#0",
+        "PMEC_005#0",
+        "PMEC_007#0",
+        "PMEC_010#0"
+      ],
+      "15": [
+        "PMEC_001#0",
+        "PMEC_004#1",
+        "PMEC_005#1",
+        "PMEC_008#1",
+        "PMEC_009#0"
+      ],
+      "19": [
+        "PMEC_003#0",
+        "PMEC_007#1"
+      ],
+      "23": [
+        "PMEC_001#1",
+        "PMEC_005#2"
+      ],
+      "25": [
+        "PMEC_002#1",
+        "PMEC_004#2",
+        "PMEC_006#1",
+        "PMEC_008#2",
+        "PMEC_010#1"
+      ]
+    },
+    "tasks_not_revisited": 0,
+    "tasks_outside_horizon": 0,
+    "leaked_mass_linear_input": 43.054,
+    "leaked_mass_linear_grouped": 43.054,
+    "leaked_mass_proportional_input": 45.048,
+    "leaked_mass_proportional_grouped": 44.965
+  },
+  "tasks": [
+    {
+      "ident": "PMEC_001#0",
+      "pmec": "PMEC_001",
+      "cycle": 0,
+      "tau_base": 11,
+      "tau0_at_solve": 11,
+      "tau0_final": 11,
+      "assigned": 15,
+      "window": 2,
+      "shift": 4
+    },
+    {
+      "ident": "PMEC_001#1",
+      "pmec": "PMEC_001",
+      "cycle": 1,
+      "tau_base": 22,
+      "tau0_at_solve": 26,
+      "tau0_final": 26,
+      "assigned": 23,
+      "window": 3,
+      "shift": 1
+    },
+    {
+      "ident": "PMEC_002#0",
+      "pmec": "PMEC_002",
+      "cycle": 0,
+      "tau_base": 8,
+      "tau0_at_solve": 8,
+      "tau0_final": 8,
+      "assigned": 7,
+      "window": 1,
+      "shift": -1
+    },
+    {
+      "ident": "PMEC_002#1",
+      "pmec": "PMEC_002",
+      "cycle": 1,
+      "tau_base": 23,
+      "tau0_at_solve": 22,
+      "tau0_final": 22,
+      "assigned": 25,
+      "window": 3,
+      "shift": 2
+    },
+    {
+      "ident": "PMEC_003#0",
+      "pmec": "PMEC_003",
+      "cycle": 0,
+      "tau_base": 15,
+      "tau0_at_solve": 15,
+      "tau0_final": 15,
+      "assigned": 19,
+      "window": 2,
+      "shift": 4
+    },
+    {
+      "ident": "PMEC_004#0",
+      "pmec": "PMEC_004",
+      "cycle": 0,
+      "tau_base": 2,
+      "tau0_at_solve": 2,
+      "tau0_final": 2,
+      "assigned": 4,
+      "window": 1,
+      "shift": 2
+    },
+    {
+      "ident": "PMEC_004#1",
+      "pmec": "PMEC_004",
+      "cycle": 1,
+      "tau_base": 14,
+      "tau0_at_solve": 16,
+      "tau0_final": 16,
+      "assigned": 15,
+      "window": 2,
+      "shift": 1
+    },
+    {
+      "ident": "PMEC_004#2",
+      "pmec": "PMEC_004",
+      "cycle": 2,
+      "tau_base": 26,
+      "tau0_at_solve": 27,
+      "tau0_final": 27,
+      "assigned": 25,
+      "window": 3,
+      "shift": -1
+    },
+    {
+      "ident": "PMEC_005#0",
+      "pmec": "PMEC_005",
+      "cycle": 0,
+      "tau_base": 7,
+      "tau0_at_solve": 7,
+      "tau0_final": 7,
+      "assigned": 7,
+      "window": 1,
+      "shift": 0
+    },
+    {
+      "ident": "PMEC_005#1",
+      "pmec": "PMEC_005",
+      "cycle": 1,
+      "tau_base": 18,
+      "tau0_at_solve": 18,
+      "tau0_final": 18,
+      "assigned": 15,
+      "window": 2,
+      "shift": -3
+    },
+    {
+      "ident": "PMEC_005#2",
+      "pmec": "PMEC_005",
+      "cycle": 2,
+      "tau_base": 29,
+      "tau0_at_solve": 26,
+      "tau0_final": 26,
+      "assigned": 23,
+      "window": 3,
+      "shift": -6
+    },
+    {
+      "ident": "PMEC_006#0",
+      "pmec": "PMEC_006",
+      "cycle": 0,
+      "tau_base": 7,
+      "tau0_at_solve": 7,
+      "tau0_final": 7,
+      "assigned": 4,
+      "window": 1,
+      "shift": -3
+    },
+    {
+      "ident": "PMEC_006#1",
+      "pmec": "PMEC_006",
+      "cycle": 1,
+      "tau_base": 24,
+      "tau0_at_solve": 21,
+      "tau0_final": 21,
+      "assigned": 25,
+      "window": 3,
+      "shift": 1
+    },
+    {
+      "ident": "PMEC_007#0",
+      "pmec": "PMEC_007",
+      "cycle": 0,
+      "tau_base": 9,
+      "tau0_at_solve": 9,
+      "tau0_final": 9,
+      "assigned": 7,
+      "window": 1,
+      "shift": -2
+    },
+    {
+      "ident": "PMEC_007#1",
+      "pmec": "PMEC_007",
+      "cycle": 1,
+      "tau_base": 20,
+      "tau0_at_solve": 18,
+      "tau0_final": 18,
+      "assigned": 19,
+      "window": 2,
+      "shift": -1
+    },
+    {
+      "ident": "PMEC_008#0",
+      "pmec": "PMEC_008",
+      "cycle": 0,
+      "tau_base": 3,
+      "tau0_at_solve": 3,
+      "tau0_final": 3,
+      "assigned": 4,
+      "window": 1,
+      "shift": 1
+    },
+    {
+      "ident": "PMEC_008#1",
+      "pmec": "PMEC_008",
+      "cycle": 1,
+      "tau_base": 14,
+      "tau0_at_solve": 15,
+      "tau0_final": 15,
+      "assigned": 15,
+      "window": 2,
+      "shift": 1
+    },
+    {
+      "ident": "PMEC_008#2",
+      "pmec": "PMEC_008",
+      "cycle": 2,
+      "tau_base": 25,
+      "tau0_at_solve": 26,
+      "tau0_final": 26,
+      "assigned": 25,
+      "window": 3,
+      "shift": 0
+    },
+    {
+      "ident": "PMEC_009#0",
+      "pmec": "PMEC_009",
+      "cycle": 0,
+      "tau_base": 18,
+      "tau0_at_solve": 18,
+      "tau0_final": 18,
+      "assigned": 15,
+      "window": 2,
+      "shift": -3
+    },
+    {
+      "ident": "PMEC_010#0",
+      "pmec": "PMEC_010",
+      "cycle": 0,
+      "tau_base": 8,
+      "tau0_at_solve": 8,
+      "tau0_final": 8,
+      "assigned": 7,
+      "window": 1,
+      "shift": -1
+    },
+    {
+      "ident": "PMEC_010#1",
+      "pmec": "PMEC_010",
+      "cycle": 1,
+      "tau_base": 22,
+      "tau0_at_solve": 21,
+      "tau0_final": 21,
+      "assigned": 25,
+      "window": 3,
+      "shift": 3
+    }
+  ],
+  "windows": [
+    {
+      "index": 1,
+      "start": 1,
+      "end": 10,
+      "tasks": [
+        "PMEC_002#0",
+        "PMEC_004#0",
+        "PMEC_005#0",
+        "PMEC_006#0",
+        "PMEC_007#0",
+        "PMEC_008#0",
+        "PMEC_010#0"
+      ],
+      "clusters": [
+        4,
+        7
+      ],
+      "status": "optimal",
+      "objective": 2.0,
+      "fallback": false
+    },
+    {
+      "index": 2,
+      "start": 11,
+      "end": 20,
+      "tasks": [
+        "PMEC_001#0",
+        "PMEC_003#0",
+        "PMEC_004#1",
+        "PMEC_005#1",
+        "PMEC_007#1",
+        "PMEC_008#1",
+        "PMEC_009#0"
+      ],
+      "clusters": [
+        15,
+        19
+      ],
+      "status": "optimal",
+      "objective": 2.0,
+      "fallback": false
+    },
+    {
+      "index": 3,
+      "start": 21,
+      "end": 30,
+      "tasks": [
+        "PMEC_001#1",
+        "PMEC_002#1",
+        "PMEC_004#2",
+        "PMEC_005#2",
+        "PMEC_006#1",
+        "PMEC_008#2",
+        "PMEC_010#1"
+      ],
+      "clusters": [
+        23,
+        25
+      ],
+      "status": "optimal",
+      "objective": 2.0,
+      "fallback": false
+    }
+  ]
+}
