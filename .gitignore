@@ -9,3 +9,6 @@ results/pilot/
 # only their summaries are committed, together with the rows behind the main
 # comparison table of the thesis
 results/sweep_*/rows.csv
+
+# scratch output of the reproducibility re-run described in README_ch6.md
+results_repro/

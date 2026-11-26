@@ -51,6 +51,31 @@ Any dataclass field can be overridden with `--set section.name=value`, e.g.
 `--set policy.sigma_meas=0.020`, `--set scenario.epsilon=0.10`,
 `--set scenario.K_clus=3`, `--set scenario.cluster_jitter=8.0`.
 
+## Reproducibility check of the committed artifacts
+
+The committed `results/` tree was regenerated from scratch with the current code
+(`run_experiments.sh` with a different output root, `results_repro/`), then
+compared with the committed artifacts:
+
+| Artifact | Result |
+|---|---|
+| `main/summary.csv` | 36 cells, identical in 67 of 69 columns; the two that differ are solver wall-clock timings |
+| `sweep_*/summary.csv` (20 sweeps) | no difference outside timing columns |
+| `tables/*.tex` (38 files) | identical after regeneration |
+| `figures/fig_ch6_*.pdf` (4 files) | identical extracted text |
+| `trace.csv` | identical |
+
+Re-run it with:
+
+```bash
+sed 's|results/|results_repro/|g' run_experiments.sh > repro_check.sh
+bash repro_check.sh > results_repro_run.log 2>&1
+python3 -m online_grouping.figures --results results_repro --out results_repro/figures
+python3 -m online_grouping.tex_table --results results_repro/main --out results_repro/tables
+```
+
+`results_repro/` is git-ignored; `repro_check.sh` is committed.
+
 ## Solver
 
 Window sub-problems are the Chapter 5 MILPs. Gurobi is used while the model

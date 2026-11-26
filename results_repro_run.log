@@ -1,0 +1,379 @@
+== main comparison: 4 variants x 30 seeds x all policies
+1080 runs on 4 variants x 30 seeds x 9 policies
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+  50/1080 (10s)
+  100/1080 (17s)
+  150/1080 (23s)
+  200/1080 (31s)
+  250/1080 (38s)
+  300/1080 (45s)
+  350/1080 (57s)
+  400/1080 (64s)
+  450/1080 (75s)
+  500/1080 (84s)
+  550/1080 (93s)
+  600/1080 (116s)
+  650/1080 (129s)
+  700/1080 (146s)
+  750/1080 (166s)
+  800/1080 (178s)
+  850/1080 (199s)
+  900/1080 (211s)
+  950/1080 (226s)
+  1000/1080 (245s)
+  1050/1080 (259s)
+finished in 264s
+/home/ubadmin/miniconda3/lib/python3.14/site-packages/scipy/stats/_wilcoxon.py:192: RuntimeWarning: invalid value encountered in scalar divide
+  z = (r_plus - mn) / se
+wrote results_repro/main/rows.csv (1080 runs) and summary.csv (36 cells)
+== sweep adv6_D
+180 runs on 1 variants x 20 seeds x 9 policies
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+  50/180 (36s)
+  100/180 (60s)
+  150/180 (77s)
+finished in 86s
+/home/ubadmin/miniconda3/lib/python3.14/site-packages/scipy/stats/_wilcoxon.py:192: RuntimeWarning: invalid value encountered in scalar divide
+  z = (r_plus - mn) / se
+wrote results_repro/sweep_adv6_D/rows.csv (180 runs) and summary.csv (9 cells)
+== sweep eta20_D
+180 runs on 1 variants x 20 seeds x 9 policies
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+  50/180 (25s)
+  100/180 (38s)
+  150/180 (52s)
+finished in 57s
+/home/ubadmin/miniconda3/lib/python3.14/site-packages/scipy/stats/_wilcoxon.py:192: RuntimeWarning: invalid value encountered in scalar divide
+  z = (r_plus - mn) / se
+wrote results_repro/sweep_eta20_D/rows.csv (180 runs) and summary.csv (9 cells)
+== sweep delay3_D
+180 runs on 1 variants x 20 seeds x 9 policies
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+  50/180 (23s)
+  100/180 (36s)
+  150/180 (46s)
+finished in 52s
+/home/ubadmin/miniconda3/lib/python3.14/site-packages/scipy/stats/_wilcoxon.py:192: RuntimeWarning: invalid value encountered in scalar divide
+  z = (r_plus - mn) / se
+wrote results_repro/sweep_delay3_D/rows.csv (180 runs) and summary.csv (9 cells)
+== sweep eps10_A
+180 runs on 1 variants x 20 seeds x 9 policies
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+  50/180 (13s)
+  100/180 (21s)
+  150/180 (26s)
+finished in 31s
+/home/ubadmin/miniconda3/lib/python3.14/site-packages/scipy/stats/_wilcoxon.py:192: RuntimeWarning: invalid value encountered in scalar divide
+  z = (r_plus - mn) / se
+wrote results_repro/sweep_eps10_A/rows.csv (180 runs) and summary.csv (9 cells)
+== sweep cap3_D
+180 runs on 1 variants x 20 seeds x 9 policies
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+  50/180 (166s)
+  100/180 (188s)
+  150/180 (254s)
+finished in 280s
+/home/ubadmin/miniconda3/lib/python3.14/site-packages/scipy/stats/_wilcoxon.py:192: RuntimeWarning: invalid value encountered in scalar divide
+  z = (r_plus - mn) / se
+wrote results_repro/sweep_cap3_D/rows.csv (180 runs) and summary.csv (9 cells)
+== sweep eps25_A
+180 runs on 1 variants x 20 seeds x 9 policies
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+  50/180 (11s)
+  100/180 (20s)
+  150/180 (27s)
+finished in 31s
+/home/ubadmin/miniconda3/lib/python3.14/site-packages/scipy/stats/_wilcoxon.py:192: RuntimeWarning: invalid value encountered in scalar divide
+  z = (r_plus - mn) / se
+wrote results_repro/sweep_eps25_A/rows.csv (180 runs) and summary.csv (9 cells)
+== sweep win20_D
+180 runs on 1 variants x 20 seeds x 9 policies
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+  50/180 (65s)
+  100/180 (106s)
+  150/180 (148s)
+finished in 160s
+/home/ubadmin/miniconda3/lib/python3.14/site-packages/scipy/stats/_wilcoxon.py:192: RuntimeWarning: invalid value encountered in scalar divide
+  z = (r_plus - mn) / se
+wrote results_repro/sweep_win20_D/rows.csv (180 runs) and summary.csv (9 cells)
+== sweep missing_A
+180 runs on 1 variants x 20 seeds x 9 policies
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+  50/180 (14s)
+  100/180 (21s)
+  150/180 (28s)
+finished in 33s
+/home/ubadmin/miniconda3/lib/python3.14/site-packages/scipy/stats/_wilcoxon.py:192: RuntimeWarning: invalid value encountered in scalar divide
+  z = (r_plus - mn) / se
+wrote results_repro/sweep_missing_A/rows.csv (180 runs) and summary.csv (9 cells)
+== sweep delay10_D
+180 runs on 1 variants x 20 seeds x 9 policies
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+  50/180 (33s)
+  100/180 (57s)
+  150/180 (71s)
+finished in 78s
+/home/ubadmin/miniconda3/lib/python3.14/site-packages/scipy/stats/_wilcoxon.py:192: RuntimeWarning: invalid value encountered in scalar divide
+  z = (r_plus - mn) / se
+wrote results_repro/sweep_delay10_D/rows.csv (180 runs) and summary.csv (9 cells)
+== sweep jitter15_D
+180 runs on 1 variants x 20 seeds x 9 policies
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+  50/180 (25s)
+  100/180 (40s)
+  150/180 (53s)
+finished in 59s
+/home/ubadmin/miniconda3/lib/python3.14/site-packages/scipy/stats/_wilcoxon.py:192: RuntimeWarning: invalid value encountered in scalar divide
+  z = (r_plus - mn) / se
+wrote results_repro/sweep_jitter15_D/rows.csv (180 runs) and summary.csv (9 cells)
+== sweep clean_A
+180 runs on 1 variants x 20 seeds x 9 policies
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+  50/180 (15s)
+  100/180 (24s)
+  150/180 (32s)
+finished in 36s
+/home/ubadmin/miniconda3/lib/python3.14/site-packages/scipy/stats/_wilcoxon.py:192: RuntimeWarning: invalid value encountered in scalar divide
+  z = (r_plus - mn) / se
+wrote results_repro/sweep_clean_A/rows.csv (180 runs) and summary.csv (9 cells)
+== sweep jitter8_D
+180 runs on 1 variants x 20 seeds x 9 policies
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+  50/180 (27s)
+  100/180 (42s)
+  150/180 (54s)
+finished in 61s
+/home/ubadmin/miniconda3/lib/python3.14/site-packages/scipy/stats/_wilcoxon.py:192: RuntimeWarning: invalid value encountered in scalar divide
+  z = (r_plus - mn) / se
+wrote results_repro/sweep_jitter8_D/rows.csv (180 runs) and summary.csv (9 cells)
+== sweep cap5_D
+180 runs on 1 variants x 20 seeds x 9 policies
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+  50/180 (43s)
+  100/180 (66s)
+  150/180 (86s)
+finished in 96s
+/home/ubadmin/miniconda3/lib/python3.14/site-packages/scipy/stats/_wilcoxon.py:192: RuntimeWarning: invalid value encountered in scalar divide
+  z = (r_plus - mn) / se
+wrote results_repro/sweep_cap5_D/rows.csv (180 runs) and summary.csv (9 cells)
+== sweep eps01_A
+180 runs on 1 variants x 20 seeds x 9 policies
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+  50/180 (14s)
+  100/180 (20s)
+  150/180 (27s)
+finished in 32s
+/home/ubadmin/miniconda3/lib/python3.14/site-packages/scipy/stats/_wilcoxon.py:192: RuntimeWarning: invalid value encountered in scalar divide
+  z = (r_plus - mn) / se
+wrote results_repro/sweep_eps01_A/rows.csv (180 runs) and summary.csv (9 cells)
+== sweep delay20_D
+180 runs on 1 variants x 20 seeds x 9 policies
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+  50/180 (32s)
+  100/180 (53s)
+  150/180 (70s)
+finished in 78s
+/home/ubadmin/miniconda3/lib/python3.14/site-packages/scipy/stats/_wilcoxon.py:192: RuntimeWarning: invalid value encountered in scalar divide
+  z = (r_plus - mn) / se
+wrote results_repro/sweep_delay20_D/rows.csv (180 runs) and summary.csv (9 cells)
+== sweep nolock_S5
+180 runs on 1 variants x 20 seeds x 9 policies
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+  50/180 (26s)
+  100/180 (41s)
+  150/180 (54s)
+finished in 61s
+/home/ubadmin/miniconda3/lib/python3.14/site-packages/scipy/stats/_wilcoxon.py:192: RuntimeWarning: invalid value encountered in scalar divide
+  z = (r_plus - mn) / se
+wrote results_repro/sweep_nolock_S5/rows.csv (180 runs) and summary.csv (9 cells)
+== sweep shock_C
+180 runs on 1 variants x 20 seeds x 9 policies
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+  50/180 (156s)
+  100/180 (295s)
+  150/180 (381s)
+finished in 437s
+/home/ubadmin/miniconda3/lib/python3.14/site-packages/scipy/stats/_wilcoxon.py:192: RuntimeWarning: invalid value encountered in scalar divide
+  z = (r_plus - mn) / se
+wrote results_repro/sweep_shock_C/rows.csv (180 runs) and summary.csv (9 cells)
+== sweep shock_D
+180 runs on 1 variants x 20 seeds x 9 policies
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+  50/180 (155s)
+  100/180 (278s)
+  150/180 (390s)
+finished in 437s
+/home/ubadmin/miniconda3/lib/python3.14/site-packages/scipy/stats/_wilcoxon.py:192: RuntimeWarning: invalid value encountered in scalar divide
+  z = (r_plus - mn) / se
+wrote results_repro/sweep_shock_D/rows.csv (180 runs) and summary.csv (9 cells)
+== sweep noise_A
+180 runs on 1 variants x 20 seeds x 9 policies
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+  50/180 (13s)
+  100/180 (20s)
+  150/180 (24s)
+finished in 29s
+/home/ubadmin/miniconda3/lib/python3.14/site-packages/scipy/stats/_wilcoxon.py:192: RuntimeWarning: invalid value encountered in scalar divide
+  z = (r_plus - mn) / se
+wrote results_repro/sweep_noise_A/rows.csv (180 runs) and summary.csv (9 cells)
+== sweep noise_C
+180 runs on 1 variants x 20 seeds x 9 policies
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+Restricted license - for non-production use only - expires 2028-11-29
+  50/180 (29s)
+  100/180 (46s)
+  150/180 (58s)
+finished in 65s
+/home/ubadmin/miniconda3/lib/python3.14/site-packages/scipy/stats/_wilcoxon.py:192: RuntimeWarning: invalid value encountered in scalar divide
+  z = (r_plus - mn) / se
+wrote results_repro/sweep_noise_C/rows.csv (180 runs) and summary.csv (9 cells)
+== trace for the timeline figure
+Restricted license - for non-production use only - expires 2028-11-29
+wrote results_repro/trace_run/trace.csv (720 rows, 4 compartments, D_high_cluster seed 3 policy S5_proposed)
+== all sweeps written under results_repro/
