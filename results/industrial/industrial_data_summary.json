@@ -1,0 +1,466 @@
+{
+  "register": {
+    "Patrimoine CSEM": {
+      "rows": 24978,
+      "distinct_equipment": 24978,
+      "nominal_pressure_counts": {
+        "3.5": 13827,
+        "6.3": 5055,
+        "6.5": 1813,
+        "5.5": 1685,
+        "7.0": 927,
+        "3.3": 736,
+        "5.3": 652,
+        "7.5": 134
+      },
+      "nominal_pressure_missing": 59,
+      "gas_mass": {
+        "n": 24978,
+        "non_null": 24693,
+        "missing": 285,
+        "min": 0.0,
+        "p05": 2.0,
+        "median": 10.2,
+        "p90": 54.2,
+        "p99": 177.0,
+        "max": 376.5
+      },
+      "gas_mass_zero": 198,
+      "volume": {
+        "n": 24978,
+        "non_null": 24693,
+        "missing": 285,
+        "min": 0.0,
+        "p05": 0.0795,
+        "median": 0.3816,
+        "p90": 2.2894,
+        "p99": 8.3725,
+        "max": 17.9574
+      },
+      "volume_zero": 198,
+      "kappa_ratio_over_volume": {
+        "rows": 24495,
+        "min": 5.99,
+        "median": 5.99,
+        "max": 5.99
+      },
+      "nominal_3p5_bar": {
+        "rows": 13827,
+        "volume": {
+          "n": 13827,
+          "non_null": 13627,
+          "missing": 200,
+          "min": 0.0,
+          "p05": 0.1192,
+          "median": 0.6439,
+          "p90": 4.0732,
+          "p99": 11.447,
+          "max": 17.9574
+        },
+        "volume_zero": 42,
+        "gas_mass": {
+          "n": 13827,
+          "non_null": 13627,
+          "missing": 200,
+          "min": 0.0,
+          "p05": 2.5,
+          "median": 13.5,
+          "p90": 85.4,
+          "p99": 240.0,
+          "max": 376.5
+        }
+      }
+    },
+    "Sheet2": {
+      "rows": 13827,
+      "distinct_equipment": 13827,
+      "nominal_pressure_counts": {
+        "3.5": 13827
+      },
+      "nominal_pressure_missing": 0,
+      "gas_mass": {
+        "n": 13827,
+        "non_null": 13627,
+        "missing": 200,
+        "min": 0.0,
+        "p05": 2.5,
+        "median": 13.5,
+        "p90": 85.4,
+        "p99": 240.0,
+        "max": 376.5
+      },
+      "gas_mass_zero": 42,
+      "volume": {
+        "n": 13827,
+        "non_null": 13627,
+        "missing": 200,
+        "min": 0.0,
+        "p05": 0.1192,
+        "median": 0.6439,
+        "p90": 4.0732,
+        "p99": 11.447,
+        "max": 17.9574
+      },
+      "volume_zero": 42,
+      "kappa_ratio_over_volume": {
+        "rows": 13585,
+        "min": 5.99,
+        "median": 5.99,
+        "max": 5.99
+      },
+      "nominal_3p5_bar": {
+        "rows": 13827,
+        "volume": {
+          "n": 13827,
+          "non_null": 13627,
+          "missing": 200,
+          "min": 0.0,
+          "p05": 0.1192,
+          "median": 0.6439,
+          "p90": 4.0732,
+          "p99": 11.447,
+          "max": 17.9574
+        },
+        "volume_zero": 42,
+        "gas_mass": {
+          "n": 13827,
+          "non_null": 13627,
+          "missing": 200,
+          "min": 0.0,
+          "p05": 2.5,
+          "median": 13.5,
+          "p90": 85.4,
+          "p99": 240.0,
+          "max": 376.5
+        }
+      }
+    }
+  },
+  "monitoring": {
+    "records": 9999,
+    "fields": [
+      "dateMeasure",
+      "temperature",
+      "compensatedRelativePressure",
+      "pressure",
+      "csemCur",
+      "csemFunctionality",
+      "csemPhase",
+      "csemGroupName",
+      "csemGroupType",
+      "sensorCategory"
+    ],
+    "rows_repaired_for_decimal_separator": 29997,
+    "compartments": 299,
+    "monitoring_groups": 17,
+    "compartments_per_group": {
+      "min": 5,
+      "median": 21.0,
+      "max": 42
+    },
+    "sites": 2,
+    "first_record": "2022-02-10 13:54:51+00:00",
+    "last_record": "2022-06-11 18:10:08+00:00",
+    "group_types": {
+      "D\u00e9part": 7256,
+      "tron\u00e7on": 1509,
+      "Barre": 1234
+    },
+    "functionalities_top": {
+      "SECTIONNEUR": 2422,
+      "TRAVERSEE AERIENNE AIR/SF6": 1112,
+      "POINT COMMUN": 1080,
+      "DISJONCTEUR": 1002,
+      "BARRE": 902,
+      "TT": 835,
+      "ECLISSE": 786,
+      "SECTIONNEUR DE MALT": 605
+    },
+    "sensor_category": {
+      "FIXED": 9999
+    },
+    "compensated_pressure": {
+      "n": 9999,
+      "non_null": 9999,
+      "missing": 0,
+      "min": 2.71,
+      "p05": 3.12,
+      "median": 3.44,
+      "p90": 3.55,
+      "p99": 3.64,
+      "max": 3.73
+    },
+    "raw_pressure": {
+      "n": 9999,
+      "non_null": 9999,
+      "missing": 0,
+      "min": 3.51,
+      "p05": 3.98,
+      "median": 4.33,
+      "p90": 4.53,
+      "p99": 4.68,
+      "max": 4.84
+    },
+    "temperature": {
+      "n": 9999,
+      "non_null": 9999,
+      "missing": 0,
+      "min": 2.89,
+      "p05": 5.23,
+      "median": 14.06,
+      "p90": 21.73,
+      "p99": 30.08,
+      "max": 32.97
+    },
+    "corr_raw_pressure_temperature": 0.595,
+    "corr_compensated_temperature": 0.007,
+    "records_per_compartment": {
+      "min": 11,
+      "median": 38.0,
+      "max": 42
+    },
+    "span_days_per_compartment": {
+      "median": 121.1,
+      "max": 121.2
+    },
+    "coverage_of_hourly_sampling_pct": 1.31,
+    "gap_hours": {
+      "median": 1.0,
+      "p95": 6.0,
+      "max": 2857.0,
+      "n_over_24h": 464,
+      "n_over_7d": 464
+    },
+    "consecutive_pairs": 9700,
+    "abs_dp_bar": {
+      "median": 0.01,
+      "p90": 0.02,
+      "p99": 0.07,
+      "max": 0.71,
+      "n_over_0p05": 204,
+      "n_over_0p20": 22
+    },
+    "per_compartment_std_bar": {
+      "median": 0.0246,
+      "p90": 0.0614,
+      "max": 0.3476
+    },
+    "within_compartment_range_bar": {
+      "median": 0.09,
+      "p90": 0.184,
+      "max": 0.72
+    },
+    "compartments_ever_below_3p2": 33,
+    "compartments_ever_below_3p0": 14,
+    "duplicate_compartment_timestamp_rows": 0
+  },
+  "refill_history": {
+    "sheet": "Patrimoine vs CR_2010-2024",
+    "rows": 2903,
+    "distinct_equipment": 2842,
+    "duplicate_equipment_rows": 61,
+    "nominal_pressure_counts": {
+      "3.5": 2416,
+      "3.3": 247,
+      "5.5": 28,
+      "2.5": 21,
+      "6.3": 20,
+      "6.5": 19,
+      "7.0": 16,
+      "5.3": 6
+    },
+    "nominal_pressure_missing": 130,
+    "nominal_pressure_outside_2p9_3p6": 110,
+    "gas_mass": {
+      "n": 2903,
+      "non_null": 2778,
+      "missing": 125,
+      "min": 0.0,
+      "p05": 2.0,
+      "median": 12.0,
+      "p90": 80.0,
+      "p99": 173.0,
+      "max": 325.0
+    },
+    "gas_mass_zero": 2,
+    "pct_mass_per_refill": {
+      "n": 2903,
+      "non_null": 2903,
+      "missing": 0,
+      "min": 0.0,
+      "p05": 5.8,
+      "median": 7.1,
+      "p90": 7.5,
+      "p99": 8.5,
+      "max": 9.0
+    },
+    "mass_per_refill_kg": {
+      "n": 2903,
+      "non_null": 2903,
+      "missing": 0,
+      "min": 0.0,
+      "p05": 0.0006,
+      "median": 0.75,
+      "p90": 5.5025,
+      "p99": 11.9891,
+      "max": 23.075
+    },
+    "refills_by_year": {
+      "2010": 1696,
+      "2011": 1455,
+      "2012": 1502,
+      "2013": 1590,
+      "2014": 1490,
+      "2015": 1681,
+      "2016": 1805,
+      "2017": 1650,
+      "2018": 1733,
+      "2019": 1585,
+      "2020": 1403,
+      "2021": 1299,
+      "2022": 962,
+      "2023": 846,
+      "2024": 818
+    },
+    "refills_total": 21515,
+    "refills_per_equipment": {
+      "median": 3.0,
+      "p75": 8.0,
+      "p90": 19.0,
+      "p99": 59.940000000000055,
+      "max": 127.0,
+      "share_ge_3": 0.534,
+      "share_ge_5": 0.395
+    },
+    "equipment_with_at_least_one_refill": 2903,
+    "operational_criterion_hits": {
+      "flagged_equipment": 51,
+      "flagged_twice_or_more": 24,
+      "max": 13.0,
+      "non_null": 51
+    },
+    "rolling_year_rejected_mass_kg": {
+      "n": 2903,
+      "non_null": 2903,
+      "missing": 0,
+      "min": 0.0,
+      "p05": 0.0,
+      "median": 0.0,
+      "p90": 0.9902,
+      "p99": 8.3027,
+      "max": 47.2221
+    },
+    "last_work_order_nature": {
+      "nan": 1683,
+      "SF6ACCES": 393,
+      "SF6MAN": 349,
+      "SF6COTMP": 222,
+      "SF6MANT": 81
+    },
+    "last_leak_treated": {
+      "NON": 1723,
+      "OUI : APPAREIL FERRAILLE": 323,
+      "OUI : REMPLACEMENT ACCESSOIRES CSEM": 318,
+      "OUI : MISE A NIVEAU": 262,
+      "OUI : COLMATAGE TEMPORAIRE": 106
+    },
+    "commissioning_dates": {
+      "min": "1940-01-01",
+      "max": "2021-08-20",
+      "unparsed": 5
+    },
+    "age_years_2024": {
+      "median": 39.0,
+      "p90": 45.8,
+      "max": 85.0
+    }
+  },
+  "cycle_fits": {
+    "cycles": 30,
+    "fits_with_supported_trend": 22,
+    "compartments": 8,
+    "alpha_bar_per_day": {
+      "min": 3e-05,
+      "p25": 0.00222,
+      "median": 0.00425,
+      "p75": 0.01021,
+      "max": 0.02038
+    },
+    "alpha_ci_width_bar_per_day": {
+      "median": 0.00049,
+      "max": 0.00758
+    },
+    "r_squared": {
+      "min": 0.0005,
+      "median": 0.9928
+    },
+    "residual_rmse_bar": {
+      "min": 0.00479,
+      "median": 0.00714,
+      "max": 0.03796
+    },
+    "fit_span_days": {
+      "median": 31.5,
+      "max": 371.0
+    },
+    "fit_points": {
+      "median": 30.0,
+      "max": 368.0,
+      "without_points": 6
+    },
+    "extract_rows": 1685,
+    "extract_compartments": 8,
+    "extract_first": "2021-06-25",
+    "extract_last": "2023-05-15",
+    "extract_calendar_days": 690,
+    "extract_days_per_compartment": {
+      "min": 37,
+      "median": 137.0,
+      "max": 536
+    },
+    "extract_missing_days_per_compartment": {
+      "median": 3.0,
+      "max": 46
+    },
+    "raw_measurements_per_day": {
+      "min": 1,
+      "median": 24.0,
+      "max": 25,
+      "single_measurement_days": 1
+    },
+    "refill_days_in_extract": 28,
+    "pressure_obs_range_bar": [
+      3.06,
+      3.58
+    ],
+    "unsupported_fits": 1,
+    "compartments_with_several_fits": 4,
+    "within_compartment_rate_ratio_max_over_min": {
+      "E": {
+        "n": 3,
+        "min": 0.01037,
+        "max": 0.01365,
+        "ratio": 1.32
+      },
+      "F": {
+        "n": 4,
+        "min": 0.00973,
+        "max": 0.02038,
+        "ratio": 2.09
+      },
+      "G": {
+        "n": 5,
+        "min": 0.0038,
+        "max": 0.00556,
+        "ratio": 1.46
+      },
+      "H": {
+        "n": 4,
+        "min": 0.00195,
+        "max": 0.00215,
+        "ratio": 1.1
+      }
+    },
+    "within_compartment_factor_two": 3
+  }
+}
