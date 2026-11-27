@@ -1,10 +1,13 @@
 # Chapter 3 (Industrial Background): fleet-record statistics
 
-Thesis Chapter 3 quotes statistics of three RTE extracts. Every quoted number is
-produced by `online_grouping/industrial_data.py`; nothing in the chapter was typed
-by hand. The chapter does not use these records as model data — Chapters 4, 5 and
-6 run on synthetic instances — it uses them to justify the parameter ranges and to
-argue that uncertainty is a property of the records, not a modelling choice.
+Thesis Chapter 3 describes three RTE extracts and the derived refilling-cycle
+fits. The chapter quotes only the handful of magnitudes it argues with; the full
+statistics stay in this repository, produced by
+`online_grouping/industrial_data.py`, so that every quoted value and every
+qualitative claim traces back to a computed artifact. The chapter does not use
+these records as model data — Chapters 4, 5 and 6 run on synthetic instances — it
+uses them to justify the parameter ranges, and to argue that leak-rate estimation
+under sparse, noisy records is where the uncertainty chapter comes from.
 
 ## Running it
 
@@ -29,16 +32,25 @@ Inputs (not committed here, they stay on the local machine):
 
 | Path | Content |
 |---|---|
-| `results/industrial/industrial_data_summary.json` | every statistic quoted in the chapter |
-| `results/figures/fig_data_monitoring.pdf` | two example pressure series (chapter Figure 3.2) |
-| `results/figures/fig_data_fleet.pdf` | nominal-pressure classes and volume classes (Figure 3.3) |
-| `results/figures/fig_data_slopes.pdf` | 22 fitted leak rates against the modelled bands (Figure 3.4) |
-| `results/figures/fig_data_quality.pdf` | reporting gaps and within-hour scatter (Figure 3.5) |
+| `results/industrial/industrial_data_summary.json` | every statistic of the three extracts |
+| `results/figures/fig_data_monitoring.pdf` | measured pressure of two instrumented PMECs, titled PMEC 1 / PMEC 2 (thesis Figure 3.2) |
+| `results/figures/fig_data_slopes.pdf` | fitted leak rates per refilling cycle against the modelled bands (Figure 3.3) |
+| `results/figures/fig_data_quality.pdf` | distribution of transmission gaps (Figure 3.4) |
+| `results/figures/fig_data_fleet.pdf` | register and refilling distributions: diagnostic only, no longer included in the chapter |
 
-`sync_thesis_assets.sh` copies the four PDFs to `Thesis/figures/` and the JSON to
-`Thesis/tables/industrial_data_summary.json`.
+The series in `fig_data_monitoring.pdf` are measurements, not simulations: they are
+`pressure_obs` (daily means of the transmissions, `n_measurements` transmissions per
+day) of two real instrumented PMECs in `pressure_data_with_cycle_fits.csv`. Only the
+green dots are model output — the value of the fitted cycle trend at the points used
+in the fit.
 
-## Numbers the chapter rests on
+`sync_thesis_assets.sh` copies the three included PDFs to `Thesis/figures/` and the
+JSON to `Thesis/tables/industrial_data_summary.json`.
+
+## What the artifact contains
+
+The chapter prints a few of these; the rest are kept so that its
+qualitative wording can be re-checked.
 
 | Quantity | Value |
 |---|---|
@@ -63,14 +75,16 @@ Inputs (not committed here, they stay on the local machine):
 python -m online_grouping.check_chapter3_numbers
 ```
 
-It compares the JSON against the strings in the chapter, recomputes the derived
-claims (0.0043 bar/day × 30 days × κ = 0.76 kg, etc.), and fails if any raw site,
-group, or register identifier appears in the chapter. Exit code 0 means the
-chapter is consistent with the data as processed.
+Three things are checked: every statistic of the pipeline is pinned against a known
+value (so a change in the extracts or the code is caught); the strings the chapter
+does print are matched against the artifact; and the qualitative claims it makes
+("about half the register", "two orders of magnitude", "gaps of days to months") are
+recomputed. It also fails if any raw site, group, or register identifier appears in
+the chapter. Exit code 0 means the chapter says no more than the data support.
 
 ## Anonymity
 
 The extracts carry operator identifiers (group names such as the two sites and the
 17 electrical groups, 10-digit register ids). None of them appear in the thesis,
 in the figures, or in the committed JSON: aggregates only, four example
-compartments labelled A–H or "first/second", and no raw record dumps.
+compartments labelled A–H or "PMEC 1 / PMEC 2", and no raw record dumps.

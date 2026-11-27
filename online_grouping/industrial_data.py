@@ -370,7 +370,7 @@ def fig_monitoring(fits_dir: Path, out: Path) -> None:
                 pd.to_numeric(used['fitted_pressure'], errors='coerce'), '.', ms=3, color='#2e7d32')
         ax.axhline(3.2, color='grey', ls='--', lw=.7)
         ax.axhline(3.0, color='k', ls=':', lw=.7)
-        ax.set_title('instrumented compartment %d' % (k + 1), fontsize=9)
+        ax.set_title('PMEC %d' % (k + 1), fontsize=9)
         ax.tick_params(labelsize=7)
         for lab in ax.get_xticklabels():
             lab.set_rotation(20)

@@ -1,11 +1,14 @@
-"""Assert that every number quoted in Chapter 3 matches the data artifacts.
+"""Assert that Chapter 3 only claims what the data artifacts support.
 
-Chapter 3 quotes statistics of the three RTE extracts.  Those statistics live in
+The statistics of the three RTE extracts live in
 ``results/industrial/industrial_data_summary.json`` (written by
-``industrial_data.py``).  This script re-reads the JSON, recomputes a few
-derived quantities, and checks that the chapter text contains the exact strings
-that encode them.  It is a drift detector: after re-running the statistics, run
-this before trusting the chapter.
+``industrial_data.py``).  The chapter quotes only a few of them, so the check has
+two halves.  First, every statistic the pipeline produces is pinned against a
+known value, so a change in the extracts or in the code is caught.  Second, the
+qualitative claims the chapter makes ("about half the register", "two orders of
+magnitude", "gaps of days to months") are recomputed from the artifacts, and the
+few numbers the chapter does print are matched against them.  Run this after
+re-running the statistics, before trusting the chapter.
 
 Run::
 
@@ -168,36 +171,33 @@ def main() -> None:
             print('ARTIFACT MISMATCH  %-45s artifact=%s  text=%s' % (label, got, want))
             bad += 1
 
-    # every number above has to appear in the chapter in the form used there
+    # the chapter now quotes only the magnitudes it argues with; each of those
+    # strings has to be present, in the form used in the text
     strings = [
-        '24{,}978', '13{,}827', '5{,}055', '1{,}813', '1{,}685', '(927', '(736',
-        '59 entries have the field', '24{,}495', '5.99 times', '0.64~m\\textsuperscript{3}',
-        '4.07~m\\textsuperscript{3}', '17.96~m\\textsuperscript{3}', '13.5~kg', '376.5~kg',
-        '242 of 13{,}827', '285 entries', '198 more',
-        '9{,}999 transmissions', '299 instrumented', '17 electrical groups',
-        '7{,}256 of the records', '1{,}509 for line', '1{,}234 for busbars',
-        'between 5 and 42', '2.71 and 3.73~bar', 'median\nof 3.44~bar', '33 of the 299',
-        '14\nfall below 3.0~bar', '3.51\nto 4.84~bar', '2.9 and 33.0', 'is 0.60', 'is 0.01',
-        '38 records', '1.3\\%',
-        '464 gaps exceed a day', '2{,}857~hours', '119 days', '37 to\n536', '137 by median',
-        'up to 46', '0.025~bar', '0.061~bar', '0.348~bar', 'reaches 0.72~bar',
-        'median of 0.01~bar', '204 of\n9{,}700', '0.05~bar', '0.2~bar', 'being 0.71~bar',
-        'eighty days', '2{,}903 rows, 2{,}842', '39 years', '21{,}515', '818 (2024)',
-        '1{,}805 (2016)', 'nineteen times', 'maximum 127', '53\\%', '40\\%',
-        'median of 7.1\\%', '5.8\\%', 'maximum of 9.0\\%', '0.75~kg', '5.50~kg', '23.08~kg',
-        'Only 51 of the 2{,}903', '24 of them twice', 'being 13', '0.99~kg', '47.22~kg',
-        '1{,}220 compartments', '393 accessory', '349 manual', '222 temporary', '81 upgrades',
-        '1{,}723 compartments, 59\\%', '2{,}416 of the 2{,}903',
-        '8 compartments over 690 calendar days', '28 refilling days', '30 cycles, 6 of which have',
-        'Twenty-two of\nthe remaining twenty-four', '0.0005',
-        '0.00003 to 0.0204~bar/day', '0.0022, a median of\n0.0043', '0.0102~bar/day',
-        '1.10, 1.32, 1.46', '2.09', '0.993', '0.0005~bar/day wide',
-        '0.0071~bar, between 0.0048 and 0.0380~bar', '31.5 days and reach 371 days',
-        '0.0024 and\n0.0031~bar/day', '0.76~kg of', '0.13~bar in thirty days',
-        'median of 0.75~kg per refilling', '7.1\\% of a\n12~kg charge is 0.85~kg',
-        '5~kg per rolling year', '0.99~kg', '2.5~kg per compartment per thirty',
-        'two refilling alarms in two months', '7{,}500--15{,}000',
-        '0.71~bar step', 'a fifth of a nominal charge', '1.3\\% of an hourly series',
+        # Table~\ref{tab:data-sources}: what the extracts cover
+        '24{,}978 compartments', '2{,}903 compartments', '9{,}999 records, 299',
+        '30 cycles, 8 compartments',
+        # register
+        '55\\%', '2{,}416 of the 2{,}903',
+        '0.64~m\\textsuperscript{3} to 17.96~m\\textsuperscript{3}',
+        '5.99~kg of SF$_6$', '$\\kappa=5.993$~kg/bar',
+        # monitoring
+        '299 instrumented \\ac{PMEC}s', '17 electrical groups',
+        # refilling history
+        'more than half of the file answers no',
+        # leak rates
+        '$10^{-3}$ to\n$10^{-2}$~bar/day', 'nearer $10^{-4}$~bar/day',
+        'about 1\\% of the charge per year at 3.5~bar',
+        # data quality
+        'a fifth of a nominal charge', 'gaps of days to\nmonths',
+        'scatters by a few hundredths of a bar',
+        # summary
+        '25{,}000 compartments', 'about 7\\% of the charge gone',
+        # parameter tables: the values the modeling chapters use
+        '$\\kappa = 5.993$~kg/bar per m\\textsuperscript{3}',
+        '0.012--0.030~bar/day', '0.001--0.003 and 0.004--0.008~bar/day',
+        '$\\sigma_y = 0.008$~bar', '2.5~kg per compartment per 30 days',
+        '5~kg per rolling year',
     ]
     missing = [s for s in strings if s not in tex]
     for s in missing:
@@ -205,19 +205,43 @@ def main() -> None:
     if missing:
         bad += len(missing)
 
-    # derived sanity checks quoted in prose
+    # qualitative claims the slimmed chapter makes have to follow from the data
+    alpha = cyc['alpha_bar_per_day']
     derived = [
-        ('share of register at 3.5 bar is 55%', round(100 * 13827 / 24978) == 55),
-        ('0.0043 bar/day over 30 days is 0.13 bar', round(0.00425 * 30, 2) == 0.13),
-        ('0.129 bar times kappa is 0.76 kg', round(0.00425 * 30 * 5.993, 2) == 0.76),
-        ('7.1% of 12 kg is 0.85 kg', round(0.071 * 12, 2) == 0.85),
-        ('0.35 bar needs about 80 days', 75 <= round(0.35 / 0.00425) <= 85),
-        ('1%/yr at 3.5 bar is about 1e-4 bar/day', 8e-5 <= 0.01 * 3.5 / 365 <= 1.1e-4),
-        ('median fitted rate is about 40x the fleet average', 35 <= 0.00425 / (0.01 * 3.5 / 365) <= 50),
-        ('0.71 bar is a fifth of 3.5 bar', round(100 * 0.71 / 3.5) == 20),
-        ('3.2 bar alarm is an 8-9% pressure drop', 0.90 <= 3.2 / 3.5 <= 0.93),
-        ('38 records are 1.3% of hourly over 121 days',
-         abs(100 * 38 / (121.1 * 24) - 1.31) < 0.05),
+        ('about half the register is 3.5 bar class', 0.50 <= 13827 / 24978 <= 0.60),
+        ('3.5 bar class dominates the refilling history',
+         hist['nominal_pressure_counts']['3.5'] / hist['rows'] > 0.8),
+        ('the refilling history is mostly old equipment',
+         30 <= hist['age_years_2024']['median'] <= 45),
+        ('refilling comes back often on part of the population',
+         hist['refills_per_equipment']['p90'] >= 10),
+        ('each refilling puts back a few percent of the charge',
+         0.05 <= hist['pct_mass_per_refill']['median'] / 100 <= 0.10),
+        ('most rows have no repair behind them',
+         (hist['rows'] - hist['last_work_order_nature'].get('nan', 0)) < hist['rows'] / 2
+         and hist['last_leak_treated']['NON'] > hist['rows'] / 2),
+        ('leak rates span about two orders of magnitude',
+         100 <= alpha['max'] / alpha['min'] <= 1000),
+        ('fitted rates are of the order 1e-3 to 1e-2 bar/day',
+         1e-3 <= alpha['median'] <= 1e-2 and 1e-2 <= alpha['max'] <= 3e-2),
+        ('the fleet average of 1%/yr is nearer 1e-4 bar/day at 3.5 bar',
+         8e-5 <= 0.01 * 3.5 / 365 <= 1.1e-4),
+        ('the instrumented population leaks far faster than that average',
+         alpha['median'] / (0.01 * 3.5 / 365) > 20),
+        ('the alarm drop at 3.2 bar is about 7-9% of the charge',
+         0.90 <= 3.2 / 3.5 <= 0.93),
+        ('sensor gaps run to months',
+         30 <= mon['gap_hours']['max'] / 24 <= 180),
+        ('per-compartment scatter is a few hundredths of a bar',
+         0.01 <= mon['per_compartment_std_bar']['median'] <= 0.05),
+        ('consecutive readings can disagree by several tenths of a bar',
+         0.2 <= mon['abs_dp_bar']['max'] <= 1.0),
+        ('a few cycles give no usable trend',
+         cyc['fit_points']['without_points'] + cyc['unsupported_fits'] >= 5),
+        ('a single rate interval is wide against the slow/fast split',
+         cyc['alpha_ci_width_bar_per_day']['max'] > 0.004 - 0.001),
+        ('a few percent of register rows cannot be turned into a mass',
+         0.005 <= (sub['volume']['missing'] + sub['volume_zero']) / reg['nominal_pressure_counts']['3.5'] <= 0.05),
     ]
     for label, ok in derived:
         if not ok:

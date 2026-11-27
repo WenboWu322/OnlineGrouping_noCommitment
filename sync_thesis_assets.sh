@@ -12,10 +12,11 @@ mkdir -p "$THESIS/Thesis/tables"
 if compgen -G "results/figures/fig_ch6_*.pdf" > /dev/null; then
   cp -v results/figures/fig_ch6_*.pdf "$THESIS/Thesis/figures/"
 fi
-# Chapter 2 figures: statistics of the real data extracts, never edited by hand
-if compgen -G "results/figures/fig_data_*.pdf" > /dev/null; then
-  cp -v results/figures/fig_data_*.pdf "$THESIS/Thesis/figures/"
-fi
+# Chapter 3 figures: the real-data extracts, never edited by hand. Only the
+# three the chapter includes; fig_data_fleet.pdf stays here as a diagnostic.
+for f in monitoring slopes quality; do
+  test -f "results/figures/fig_data_$f.pdf" && cp -v "results/figures/fig_data_$f.pdf" "$THESIS/Thesis/figures/"
+done
 if [ -f results/industrial/industrial_data_summary.json ]; then
   cp -v results/industrial/industrial_data_summary.json "$THESIS/Thesis/tables/"
 fi
