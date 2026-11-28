@@ -1,5 +1,9 @@
 # Chapter 6 — online predictive grouping under data uncertainty
 
+Design rationale (for the author, in Chinese): which comparison isolates which
+design choice, why the per-seed pairing is valid, how the sensitivity sweeps are
+to be read -> `docs/ch6_model_and_experiment_design_zh.md`.
+
 This directory contains the simulation package behind Chapter 6
 (`STOCHASTIC PROBLEM EXPLORATION`) of the thesis. Every number, table and
 figure in that chapter is produced here; nothing is entered by hand in the
